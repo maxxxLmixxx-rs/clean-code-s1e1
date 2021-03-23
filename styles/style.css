@@ -17,7 +17,7 @@ body {
   width: 100%;
 }
 
-.aaa .more_inf {
+.aaa .more-info {
   font-family: fantasy, cursive;
 }
 
@@ -124,10 +124,13 @@ li {
 
 li > * {
   vertical-align: middle;
+  display: flex;
+  flex: 0 0 400px;
+  justify-content: space-between;
 }
 
 li > input[type="checkbox"] {
-  margin: 0 10px;
+  margin: 0 px;
 }
 
 li > label {
@@ -168,11 +171,11 @@ ul li input[type="text"] {
   display: none;
 }
 
-ul li.editMode input[type="text"] {
+ul li.edit-mode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+ul li.edit-mode label {
   display: none;
 }
