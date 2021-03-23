@@ -6,30 +6,30 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.aaa {
+.intro {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.intro img {
   width: 100%;
 }
 
-.aaa .more-info {
+.intro .more-info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 
-  .aaa {
+  .intro {
     text-align: center;
   }
 
 }
 
-.centered-main-page-element {
+.container {
   display: block;
   width: 400px;
   margin: 0 auto 0;
