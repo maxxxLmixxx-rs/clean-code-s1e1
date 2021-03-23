@@ -124,9 +124,6 @@ li {
 
 li > * {
   vertical-align: middle;
-  display: flex;
-  flex: 0 0 400px;
-  justify-content: space-between;
 }
 
 li > input[type="checkbox"] {
@@ -144,23 +141,23 @@ li > input[type="text"] {
   width: 226px;
 }
 
-li > button.delete:hover {
+li > .button-delete:hover {
   color: #cf2323;
 }
 
-button.delete img {
+.button-delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.button-delete img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
 
-ul#completed-tasks label {
+#completed-tasks label {
   text-decoration: line-through;
   color: #888888;
 }
