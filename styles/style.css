@@ -17,11 +17,11 @@ body {
   text-align: right;
 }
 
-.intro img {
+.intro__img {
   width: 100%;
 }
 
-.intro .more-info {
+.intro__link {
   font-family: "Handlee", "fantasy", cursive;
 }
 
