@@ -18,7 +18,7 @@ body {
 }
 
 .intro .more-info {
-  font-family: fantasy, cursive;
+  font-family: "Handlee", "fantasy", cursive;
 }
 
 @media (max-width: 768px) {
