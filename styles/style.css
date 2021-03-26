@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Basic Style */
+
+body {
+  background-color: #f8f8f8;
+  color: #333333;
+  font-family: "Lato", sans-serif;
+}
+
+.intro {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+}
+
+.intro__img {
+  width: 100%;
+}
+
+.intro__link {
+  font-family: "Handlee", "fantasy", cursive;
+}
+
+@media (max-width: 768px) {
+
+  .intro {
+    text-align: center;
+  }
+
+}
+
+.container {
+  display: block;
+  width: 400px;
+  margin: 0 auto 0;
+}
+
+.task-group__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input, button {
+  outline: none;
+}
+
+button {
+  background: none;
+  border: 0px;
+  color: #888888;
+  font-size: 15px;
+  width: 60px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #3a3a3a;
+}
+
+/* Heading */
+
+.add-task__label,
+.task-group__heading {
+  color: #333333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.task__text-input,
+.add-task__text-input {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  color: #888888;
+}
+
+.task-group__text-input:focus {
+  color: #333333;
+}
+
+/* New Task */
+
+.add-task__label {
+  display: block;
+  margin: 0 0 20px;
+}
+
+.add-task__text-input {
+  width: 318px;
+}
+
+.add-task__btn:hover {
+  color: #0fc57c;
+}
+
+/* Task list */
+
+.task {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.task > * {
+  vertical-align: middle;
+}
+
+.task__checkbox {
+  margin: 0px 10px;
+}
+
+.task__label {
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 226px;
+}
+
+.task__label {
+  width: 56%;
+  display: inline-block;
+}
+
+.task__text-input {
+  width: 226px;
+}
+
+._btn-delete:hover {
+  color: #cf2323;
+}
+
+._btn-delete img {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+
+._btn-delete img:hover {
+  transform: rotateZ(0);
+}
+
+/* Completed */
+
+.complete .task__label {
+  text-decoration: line-through;
+  color: #888888;
+}
+
+/* Edit Task */
+
+.task__text-input {
+  display: none;
+}
+
+._edit-mode .task__text-input {
+  display: inline-block;
+  width: 224px;
+}
+
+._edit-mode .task__label {
+  display: none;
+}
